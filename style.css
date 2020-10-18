@@ -1,0 +1,96 @@
+/* include at least one media query */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    --main-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#welcome-section {
+    background-color: #283148;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#greeting {
+    color: white;
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: 52px;
+    padding-top: 10%;
+}
+
+#description {
+    color: #D5896F;
+    font-family: var(--main-font);
+    margin-top: 0;
+    font-size: 20px;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #484452;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar {
+    /* The navbar should always be at the top of the viewport */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 50%;
+    background-color: #484452;
+}
+
+.nav-link {
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+#projects {
+    height: 600px;
+    background-color: #bbbbbb;
+    text-align: center;
+    padding: 80px;
+    font-size: 30px;
+}
+
+#projects h2 {
+    color: #283148;
+    font-family: var(--main-font);
+    margin: 0px;
+}
+
+#contact {
+    height: 600px;
+    text-align: center;
+    padding: 80px;
+    font-size: 30px;
+    background-color: #283148;
+}
+
+#contact h2 {
+    color: white;
+    font-family: var(--main-font);
+    margin: 0px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
