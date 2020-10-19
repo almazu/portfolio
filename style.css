@@ -63,7 +63,7 @@ header {
 }
 
 #projects {
-    height: 600px;
+    height: auto;
     background-color: #bbbbbb;
     text-align: center;
     padding: 80px;
@@ -76,8 +76,29 @@ header {
     margin: 0px;
 }
 
+#container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 40px;
+}
+
+#main-header {
+    margin: 0;
+}
+
+.project {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.project-title p {
+    font-size: 24px;
+    font-family: var(--main-font);
+}
+
 #contact {
-    height: 600px;
+    height: auto;
     text-align: center;
     padding: 80px;
     font-size: 30px;
@@ -90,7 +111,13 @@ header {
     margin: 0px;
 }
 
-.contact-link {
+.contact-link,
+#projects-link {
     color: white;
     text-decoration: none;
+    font-family: var(--main-font);
+}
+
+#projects-link {
+    color: #283148;
 }
