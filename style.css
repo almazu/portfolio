@@ -10,42 +10,6 @@ body {
     --main-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#welcome-section {
-    background-color: #283148;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    padding-top: 10%;
-}
-
-#greeting {
-    color: white;
-    margin: 0;
-    font-family: var(--main-font);
-    font-size: 52px;
-    padding-bottom: 15px;
-}
-
-.description {
-    color: #D5896F;
-    font-family: var(--main-font);
-    margin-top: 0;
-    font-size: 20px;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-        margin-top: 100%;
-        width: 100%;
-    }
-    to {
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
 header {
     height: 80px;
     display: flex;
@@ -76,10 +40,46 @@ header {
     font-size: 25px;
 }
 
+#welcome-section {
+    background-color: #283148;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 120px;
+}
+
 #about-img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+#greeting {
+    color: white;
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: 52px;
+    padding-bottom: 15px;
+}
+
+.description {
+    color: #D5896F;
+    font-family: var(--main-font);
+    margin-top: 0;
+    font-size: 20px;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 70px;
+        width: 100%;
+    }
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 #projects-section {
@@ -96,7 +96,7 @@ header {
     margin: 0px;
 }
 
-#container {
+.container {
     justify-content: space-evenly;
     flex-wrap: wrap;
     display: flex;
@@ -114,18 +114,18 @@ header {
     cursor: default;
 }
 
+.project-title .project {
+    display: block;
+    position: relative;
+}
+
 .project-title .mask {
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 75px;
     position: absolute;
     overflow: hidden;
     bottom: 0;
     left: 0;
-}
-
-.project-title .project {
-    display: block;
-    position: relative;
 }
 
 .project-title h3 {
@@ -169,27 +169,69 @@ header {
     transform: translateY(0px);
 }
 
-#contact {
-    height: auto;
+#projects-link {
+    color: #283148;
+    text-decoration: none;
+    font-family: var(--main-font);
+}
+
+#contact-section {
+    height: 400px;
     text-align: center;
     padding: 80px;
     font-size: 30px;
     background-color: #283148;
 }
 
-#contact h2 {
+#contact-section h2 {
     color: #fff;
     font-family: var(--main-font);
     margin: 0px;
 }
 
-.contact-link,
-#projects-link {
+.contact-link {
     color: #fff;
     text-decoration: none;
     font-family: var(--main-font);
 }
 
-#projects-link {
-    color: #283148;
+#hr {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    margin-top: 50px;
+    height: 4px;
+    background-color: #D5896F;
+}
+
+@media (max-width: 500px) {
+    #greeting {
+        font-size: 32px;
+    }
+    #about-img {
+        width: 100px;
+        height: 100px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .description {
+        font-size: 15px;
+    }
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+    .project-title .mask {
+        width: 300px;
+    }
+}
+
+@media (max-height: 600px) {
+    main {
+        background-color: #283148;
+    }
+    #welcome-section {
+        height: auto;
+    }
 }
