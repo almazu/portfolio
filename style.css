@@ -103,7 +103,7 @@ header {
     margin-top: 40px;
 }
 
-.project-title {
+.project-tile {
     margin: 10px;
     border: 5px solid #fff;
     overflow: hidden;
@@ -114,12 +114,12 @@ header {
     cursor: default;
 }
 
-.project-title .project {
+.project-tile .project {
     display: block;
     position: relative;
 }
 
-.project-title .mask {
+.project-tile .mask {
     width: 500px;
     height: 75px;
     position: absolute;
@@ -128,7 +128,7 @@ header {
     left: 0;
 }
 
-.project-title h3 {
+.project-tile h3 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -222,7 +222,7 @@ header {
         width: 400px;
         height: 300px;
     }
-    .project-title .mask {
+    .project-tile .mask {
         width: 300px;
     }
 }
